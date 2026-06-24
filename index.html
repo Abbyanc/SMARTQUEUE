@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartQueue | Gestión Inteligente de Filas Virtuales SaaS</title>
+    <meta name="description" content="Plataforma inteligente de gestión de filas virtuales con predicción de tiempos por IA, notificaciones automáticas y analíticas avanzadas.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- App Container -->
+    <div id="app-wrapper">
+        <!-- Main Application Shell -->
+        <main id="app"></main>
+
+        <!-- Push Notifications Toast Container -->
+        <div id="toast-container" class="toast-container"></div>
+
+        <!-- Simulated WhatsApp Device / Notification Widget -->
+        <div id="whatsapp-widget" class="whatsapp-widget collapsed">
+            <div class="whatsapp-header" id="whatsapp-toggle">
+                <div class="whatsapp-info">
+                    <div class="whatsapp-avatar">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <div class="whatsapp-title">WhatsApp SmartQueue</div>
+                        <div class="whatsapp-status">En línea (Simulado)</div>
+                    </div>
+                </div>
+                <div class="whatsapp-actions">
+                    <span class="whatsapp-badge" id="wa-badge">0</span>
+                    <i class="fas fa-chevron-up toggle-icon"></i>
+                </div>
+            </div>
+            <div class="whatsapp-body">
+                <div class="whatsapp-chat" id="whatsapp-chat">
+                    <div class="whatsapp-system-msg">
+                        Las alertas de proximidad y confirmación de turnos se enviarán aquí en tiempo real.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Application State & Logic Modules -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
